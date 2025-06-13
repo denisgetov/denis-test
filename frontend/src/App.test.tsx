@@ -1,8 +1,9 @@
 // src/App.test.tsx
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import '@testing-library/jest-dom';
 
-// Mock global fetch before each test
+
 beforeEach(() => {
   global.fetch = jest.fn(() =>
     Promise.resolve({
@@ -11,7 +12,6 @@ beforeEach(() => {
   ) as jest.Mock;
 });
 
-// Reset mocks after each test
 afterEach(() => {
   jest.resetAllMocks();
 });
