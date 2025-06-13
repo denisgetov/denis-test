@@ -1,9 +1,9 @@
 # Hello QA I will keep this simple
 
 # How to run the project
-cd backend(assuming yuo have cloned it and in your own folder)
+cd backend(assuming you have cloned it and in your own folder)
 npm install
-node index.js
+node index.js - http://localhost:5000/api/movies (use this to test if the server is running)
 
 open split terminal
 cd ..
