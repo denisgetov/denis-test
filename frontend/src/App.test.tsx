@@ -1,13 +1,10 @@
-// src/App.test.tsx
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import '@testing-library/jest-dom';
-
 
 beforeEach(() => {
   global.fetch = jest.fn(() =>
     Promise.resolve({
-      json: () => Promise.resolve([{ title: 'Inception' }]),
+      json: () => Promise.resolve([{ title: 'Inception' }]), 
     })
   ) as jest.Mock;
 });
