@@ -1,20 +1,27 @@
 # Hello QA I will keep this simple
 
 # How to run the project
-cd brandexperience-fullstack-test
-cd backend
+cd backend(assuming yuo have cloned it and in your own folder)
 npm install
 node index.js
 
 open split terminal
+cd ..
 cd frontend
 npm install
-npm test to run the test I created should be 2/2
+npm test to run the test I created should be 2/2(press a if you do not see them)
 npm start and open the server in the browser and everything should be working and also should be responsive
 
 # Some thing I want to mention
+3 folders - frontend, backend & content.
+backend just has the server running and API calls there
+content has the movies in a 'universal/root' way better for future use
+frontend has the homepage, movie page and the movie details along with some coponents.
+It is done pretty simple, I have used the tech stack as adivised in the readme. The scss could be done a better way ie more globally but I have decided to do it this way for showcasing and locating purposes.
+The app is responsive for mobile devices aswell & some slight testing has been done. some things for future more error handling and better design could be implemented. I believe the structure is simple and progressive.
 
-
+# Important
+If anything is unclear or I have misunderstood or you cannot run something please let me know asap and I will try and fix it or explain it.
 
 
 ----

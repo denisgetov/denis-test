@@ -5,24 +5,19 @@ const path = require('path');
 const app = express();
 const PORT = 5000;
 
-// Load movies data
 const movies = require('../content/movie.mock-data.json');
 
-// Enable CORS
 app.use(cors());
 
-// Serve static movie cover images
 app.use(
   '/assets/images',
   express.static(path.join(__dirname, '../content/assets/images/movie-covers'))
 );
 
-// API: All movies
 app.get('/api/movies', (req, res) => {
   res.json(movies);
 });
 
-// API: Movie by ID
 app.get('/api/movies/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const movie = movies.find(m => m.id === id);

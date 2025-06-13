@@ -4,7 +4,7 @@ import App from './App';
 beforeEach(() => {
   global.fetch = jest.fn(() =>
     Promise.resolve({
-      json: () => Promise.resolve([{ title: 'Inception' }]), 
+      json: () => Promise.resolve([{ title: 'Ant-Man' }]), 
     })
   ) as jest.Mock;
 });
